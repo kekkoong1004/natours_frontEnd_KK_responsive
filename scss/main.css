@@ -106,13 +106,13 @@ big-desk: > 1800px
 
 @media (max-width: 75em) {
   .margin-bottom-medium {
-    margin-bottom: 3rem !important;
+    margin-bottom: 3.8rem !important;
   }
 }
 
 @media (max-width: 56.25em) {
   .margin-bottom-medium {
-    margin-bottom: 2rem !important;
+    margin-bottom: 3.5rem !important;
   }
 }
 
@@ -262,19 +262,19 @@ body {
 
 @media (max-width: 75em) {
   .heading__secondary {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (max-width: 56.25em) {
   .heading__secondary {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .heading__secondary {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -765,13 +765,13 @@ body {
 
 @media (max-width: 75em) {
   .form__group:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 56.25em) {
   .form__group:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: .5rem;
   }
 }
 
@@ -786,14 +786,6 @@ body {
   border-radius: 3px;
   color: #6b6868;
   border-bottom: transparent solid 4px;
-}
-
-@media (max-width: 56.25em) {
-  .form__input {
-    height: 4rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 37.5em) {
@@ -1656,7 +1648,6 @@ body {
   .section-booking .booking {
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/nat-10.jpg);
     background-repeat: no-repeat;
-    height: auto;
     padding: 4rem;
     border-radius: 5px;
   }
@@ -1664,15 +1655,13 @@ body {
 
 @media (max-width: 56.25em) {
   .section-booking .booking {
-    background-image: linear-gradient(98deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/nat-10.jpg);
-    padding: 3rem;
+    width: 70%;
   }
 }
 
 @media (max-width: 37.5em) {
   .section-booking .booking {
-    background-image: linear-gradient(95deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../../img/nat-10.jpg);
-    padding: 2rem;
+    padding: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
