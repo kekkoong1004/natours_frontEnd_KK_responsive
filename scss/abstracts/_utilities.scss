@@ -1,0 +1,47 @@
+.margin-bottom-large {
+  margin-bottom: 6rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem !important;
+
+  @include respond(tab-land) {
+    margin-bottom: 3rem !important;
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 2rem !important;
+  }
+}
+
+.margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.margin-top-large {
+  margin-top: 10rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 5rem !important;
+  }
+}
+
+.margin-top-medium {
+  margin-top: 8rem !important;
+}
+
+.margin-top-small {
+  margin-top: 4rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 2rem !important;
+  }
+}
