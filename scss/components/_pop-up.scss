@@ -82,4 +82,67 @@
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
+
+
+
+
+
+
+
+
+
+
+
+  @include respond(tab-port) {
+
+    &__content {
+      opacity: 0;
+      width: 80vw;
+      height: auto;
+      display: block;
+    }
+
+    &__left {
+      // Will become POP_UP-TOP in tab-port mode
+      display: block;
+      width: 100%;
+
+      &::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+
+    &__img {
+      width: 50%;
+      float: left;
+      display: inline-block;
+      object-fit: cover;
+      height: 45vh;
+      
+    }
+
+    &__right {
+      // Will become POP_UP-BOTTOM in tab-port mode
+      width: 100%;
+      display: block;
+      vertical-align: none;
+    }
+
+    &__close {
+      &, &:link, &:visited {
+        font-size: 3rem;
+        top: 2rem;
+        right: 3rem;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+          transform: scale(1.4) translate(-5%, 0);
+        }
+      }
+    }
+
+  }
 }

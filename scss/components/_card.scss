@@ -5,16 +5,6 @@
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
 
-  @include respond(tab-port) {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  @include respond(phone) {
-    width: 80%;
-    margin: 0 auto;
-  }
-
   &__side {
     position: absolute;
     top: 0;
@@ -180,6 +170,57 @@
 
   &:hover &__side-back {
     transform: rotateY(0deg);
+  }
+
+
+
+
+
+
+
+
+  // max-width: 1000 px
+  @include respond(tab-port) {
+    height: auto;
+    background-color: $color-white-3;
+    border-radius: 3px;
+    box-shadow: $button-default-box-shadow;
+
+    &__side {
+      position: relative;
+      height: auto;
+      box-shadow: none;
+      transition: all .1s;
+
+      &-back {
+        transform: rotateY(0deg);
+        padding: 3rem;
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side-front {
+      transform: rotateY(0);
+    }
+
+    &__price-box {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(5%, 0);
+      height: auto;
+      padding: 3rem 0;
+    }
+
+    &__price-only {
+      font-size: 1.8rem;
+    }
+
+    &__price {
+      font-size: 4.5rem;
+      margin-bottom: 3rem;
+    }
+
   }
 
  
