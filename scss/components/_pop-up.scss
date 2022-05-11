@@ -145,4 +145,17 @@
     }
 
   }
+
+  @include respond(phone) {
+    &__left {
+      // Will become POP_UP-TOP in phone mode
+      height: 25vh;
+    }
+
+    &__img {
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
